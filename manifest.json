@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "LeetcodeResetQuestion",
+    "version": "1.0",
+    "description": "Automatically resets each newly opened question to default.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://leetcode.com/problems/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
